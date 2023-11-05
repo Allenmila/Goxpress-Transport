@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Goexpress Transport Company LTD</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Goexpress Transport company limited,Goxpress"/>
+        <meta name="keywords" content="Goexpress,Terminals,Location, About Us"/>
+        <meta name="author" content="Allen of Africa"/>
+        <meta name="viewpoint" content="width=device;initial-scale=1/">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+    <body>
+         <div class="container">
+            <aside>
+                <div class="top">
+                    <div class="logo">
+                        <img src="images/goexpress.JPG">
+                    </div>
+                    <div class="close" id="close-btn">
+                         <i class="fas fa-close"></i>
+                    </div>
+                </div>
+
+                    <div class="sidebar">
+                        <a href="#" class="active">
+                            <i class="fas fa-home"></i>
+                            <h3>Home</h3>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-route"></i>
+                            <h3>Terminals</h3>
+                        </a>
+                         <a href="#">
+                            <i class="fas fa-truck-moving"></i>
+                            <h3>Courier</h3>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-phone"></i>
+                            <h3>contact Us</h3>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-address-book"></i>
+                            <h3>About Us</h3>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-question-circle"></i>
+                            <h3>FAQ</h3>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-arrow-right-to-bracket"></i>
+                            <h3>Login/SignUp</h3>
+                        </a>
+                    </div>
+            </aside>
+            <!---------------------------End of aside  ------------------->
+             <main>
+                <button id="menu-btn" class="menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h2>The best way to travel across cities and countries </h2>
+                <p>Book Your Ticket Now!</p>
+                <div class="form-box">
+                    <div class="button-box">
+                        <div id="btn"></div>
+                        <button type="button" class="toogle" onclick="one()">One Trip <i class="fas fa-arrow-right arrow"></i></button>
+                        <button type="button" class="toogle" onclick="round()">Round Trip<i class="fa fa-repeat arrow"></i></button>
+                    </div>
+                    <form action="" class="input-group" id="one">
+                        <select class="tel">
+                          <option data-countryCode="NG" value="234">+234</option>
+                          <option data-countryCode="GH" value="233">+233</option>
+                        </select>
+                        <input type="tel" name="tel" class="input-class" placeholder="Enter phone">
+                        <input type="text" class="input-field" placeholder="Full Name" required>
+                        <input type="text" class="next" placeholder="Next Of Kin" required>
+                        
+                        <select class="tel">
+                            <option data-countryCode="NG" value="234">+234</option>
+                            <option data-countryCode="GH" value="233">+233</option>
+                          </select>
+                          <input type="tel" name="tel" class="input-tel" placeholder="Enter Next Of Kin Phone">
+                        
+                        <select id="location" class="input-field">
+                            <option value="Departure Terminal">Departure Terminal</option>
+                            <option value="Accra > Circle">Accra-Circle</option>
+                            <option value="Accra > Kasoa">Accra-Kasoa</option>
+                            <option value="Lagos > Maza-maza">Lagos-Maza-maza</option>
+                            <option value="Lagos > Cele">Lagos-Cele</option>
+                            <option value="Lagos > Iyana-Ipaja">Lagos-Iyana-Ipaja</option>
+                            <option value="Enugu > 4corner">Enugu-4corner</option>
+                        </select>
+    
+                        <select id="Terminal" class="input-field">
+                            <option value="Arrival Terminal">Arrival Terminal</option>
+                            <option value="Abia > Aba">Abia-Aba</option>
+                            <option value="Abia > Umuahia">Abia-Umuahia</option>
+                            <option value="Anambra > Akwa">Anambra-Akwa</option>
+                            <option value="Anambra > Nnewi">Anambra-Nnewi</option>
+                            <option value="Anambra > onitsha">Anambra-onitsha</option>
+                            <option value="Anambra > Ekwulobia">Anambra-Ekwulobia</option>
+                            <option value="Accra > Circle">Accra-circle</option>
+                            <option value="Accra > Kasoa">Accra-kasoa</option>
+                            <option value="Enugu > 4corner">Enugu-4corner</option>
+                            <option value="Ebonyi > Abakiliki">Ebonyi-Abakiliki</option>
+                            <option value="Imo > Owerri">Imo-Owerri</option>
+                            <option value="Lagos > Maza-maza">Lagos-Maza-maza</option>
+                            <option value="Lagos > Cele">Lagos-Cele</option>
+                            <option value="Lagos > Iyana-Ipaja">Lagos-Iyana-Ipaja</option>
+                            <option value="Enugu > 4corner">Enugu-4corner</option>
+                        </select>
+                        <label>Departure Date</label>
+                        <input type="date" class="input-field" size="30" min="2022-01-01" required>
+                        <select id="Travelers" class="input-field">
+                            <option value="Travelers">Travelers</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <input type="checkbox" class="check-box"><span>Accept terms</span>
+                        <button type="submit" class="submit-btn">Proceed</button>
+                    </form>
+                    <!-----------------------round trip form  -------------->
+                    <form action="" class="input-group" id="round">
+                        <select class="tel">
+                            <option data-countryCode="NG" value="234">+234</option>
+                            <option data-countryCode="GH" value="233">+233</option>
+                          </select>
+                          <input type="tel" name="tel" class="input-class" placeholder="Enter phone">
+                          <input type="text" class="input-field" placeholder="Full Name" required>
+                          <input type="text" class="next" placeholder="Next Of Kin" required>
+                          
+                          <select class="tel">
+                              <option data-countryCode="NG" value="234">+234</option>
+                              <option data-countryCode="GH" value="233">+233</option>
+                            </select>
+                            <input type="tel" name="tel" class="input-tel" placeholder="Enter Next Of Kin Phone">
+                        <select id="location" class="input-field">
+                            <option value="Departure Terminal">Departure Terminal</option>
+                            <option value="Accra > Circle">Accra-Circle</option>
+                            <option value="Accra > Kasoa">Accra-Kasoa</option>
+                            <option value="Lagos > Maza-maza">Lagos-Maza-maza</option>
+                            <option value="Lagos > Cele">Lagos-Cele</option>
+                            <option value="Lagos > Iyana-Ipaja">Lagos-Iyana-Ipaja</option>
+                            <option value="Enugu > 4corner">Enugu-4corner</option>
+                        </select>
+    
+                        <select id="Terminal" class="input-field">
+                            <option value="Arrival Terminal">Arrival Terminal</option>
+                            <option value="Abia > Aba">Abia-Aba</option>
+                            <option value="Abia > Umuahia">Abia-Umuahia</option>
+                            <option value="Anambra > Akwa">Anambra-Akwa</option>
+                            <option value="Anambra > Nnewi">Anambra-Nnewi</option>
+                            <option value="Anambra > onitsha">Anambra-onitsha</option>
+                            <option value="Anambra > Ekwulobia">Anambra-Ekwulobia</option>
+                            <option value="Accra > Circle">Accra-circle</option>
+                            <option value="Accra > Kasoa">Accra-kasoa</option>
+                            <option value="Enugu > 4corner">Enugu-4corner</option>
+                            <option value="Ebonyi > Abakiliki">Ebonyi-Abakiliki</option>
+                            <option value="Imo > Owerri">Imo-Owerri</option>
+                            <option value="Lagos > Maza-maza">Lagos-Maza-maza</option>
+                            <option value="Lagos > Cele">Lagos-Cele</option>
+                            <option value="Lagos > Iyana-Ipaja">Lagos-Iyana-Ipaja</option>
+                            <option value="Enugu > 4corner">Enugu-4corner</option>
+                        </select>
+                        <label class="title">Departure Date</label>
+                        <input type="date" class="input-date" size="30" min="2022-01-01" required>
+                        <label class="title">Arrival Date</label>
+                        <input type="date" class="input-date" size="30" min="2022-01-01" required>
+                        <select id="Travelers" class="input-field">
+                            <option value="Travelers">Travelers</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <input type="checkbox" class="check-box"><span>Accept terms</span>
+                        <button type="submit" class="submit-btn">Proceed</button>
+                    </form>
+                </div>
+                <!---------------------------End Of Form ----------------------->
+                <h2 class="h2">Our Services</h2>
+                <div class="services">
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <h3>Courier</h3>
+                        <p>
+                            - We specialize in transporting goods between countries, ensuring timely and secure delivery of your cargo.<br>
+                            - Our extensive network of partners and carriers guarantees the most cost-effective and efficient routes for your shipments.
+                         </p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fas fa-bus"></i>
+                        </div>
+                        <h3>Transport</h3>
+                        <p>
+                            - Whether you're a solo traveler, a group, or a family, our passenger transport services offer comfort and convenience.<br>
+                            - Our modern fleet of vehicles is equipped with all the amenities you need for a pleasant journey.
+                         
+                         </p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <h3>Routes</h3>
+                        <p>   - We understand that every journey is unique. That's why we offer customized route planning to meet your specific requirements.<br>
+                            - Our team of experts will work with you to create the most efficient and convenient travel itinerary.
+                         </p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fas fa-shield"></i>
+                        </div>
+                        <h3>Safety</h3>
+                        <p>   - Safety is our top priority. We adhere to the strictest safety standards to protect both passengers and cargo.<br>
+                            - Regular maintenance and inspections of our vehicles ensure their roadworthiness.         
+                         </p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Customer Support</h3>
+                        <p>- Our dedicated customer support team is available round-the-clock to assist you with booking, inquiries, and emergencies.<br>
+                            - We're just a call or message away to provide you with the support you need.                         
+                         </p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fas fa-location"></i>
+                        </div>
+                        <h3>Real-time Tracking</h3>
+                        <p>   - Track the progress of your cargo or the location of your vehicle in real-time for peace of mind and accurate planning.<br>
+                            - Track the movement of your loved ones or the location of your vehicle in real-time for peace of mind and accurate planning.
+                         
+                         </p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-solid fa-truck-moving"></i>
+                        </div>
+                        <h3>Driving</h3>
+                        <p> 
+                            - Our professional drivers are highly trained, experienced, and dedicated to ensuring your safety and comfort throughout your journey.<br>
+                            - They are well-versed in international regulations and road conditions, ensuring smooth border crossings.                         
+                         </p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fas fa-money-bills"></i>
+                        </div>
+                        <h3>Affordable Pricing</h3>
+                        <p>- We offer competitive pricing without compromising on the quality of service.<br>
+                            - Our transparent pricing ensures you know exactly what to expect, with no hidden fees.          
+                         </p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Enviromental responsibility</h3>
+                        <p>    - We are committed to minimizing our environmental
+                             impact by adopting eco-friendly practices and technologies wherever possible.
+                         </p>
+                    </div>
+                </div>
+                <!------------------------End Of Services  ------------------------->
+                 <div class="footer">
+                    <div class="content">
+                        <div class="row">
+                            <div class="footer-col">
+                                <h4>Company</h4>
+                                <ul class="foot">
+                                    <li><a href="#">home</a></li>
+                                    <li><a href="#">about us</a></li>
+                                    <li><a href="#">privacy policy</a></li>
+                                    <li><a href="#">terms and conditions</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-col">
+                                <h4>get help</h4>
+                                <ul class="foot">
+                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Courier</a></li>
+                                    <li><a href="#">payment options</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-col">
+                                <h4>location</h4>
+                                <ul class="foot">
+                                    <li><a href="#">Terminals</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-col">
+                                <h4>follow us</h4>
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-facebook-f soc"></i></a>
+                                    <a href="#"><i class="fab fa-twitter soc"></i></a>
+                                    <a href="#"><i class="fab fa-instagram soc"></i></a>
+                               </div> 
+                           </div>
+                       </div>
+                   </div>
+                    <p>Copyright &copy; 2023 All rights reserverd by Goexpress Transport Company Ltd.</p>
+                </div>
+             </main>
+         </div>
+
+         <script>
+            var x = document.getElementById("one");
+            var y = document.getElementById("round");
+            var z = document.getElementById("btn");
+      
+            function round(){
+              x.style.left = "-800px";
+              y.style.left = "50px";
+              z.style.left = "134px";
+            }
+            function one(){
+              x.style.left = "50px";
+              y.style.left = "900px";
+              z.style.left = "0";
+            }
+          </script>
+           <script src="java/script.js"></script>
+    </body>
+</html>
